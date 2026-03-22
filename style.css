@@ -1,0 +1,338 @@
+body{
+    offset-inline-end: 
+}
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease;
+
+}
+/* FOTO */
+.foto-box {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.foto {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+/* BRILHO */
+.glow {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff69b4, #ff1493, #ff69b4);
+    z-index: -1;
+    animation: girar 6s linear infinite;
+}
+
+/* TEXTO */
+.texto {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+    background: #ffe4ec;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    background: #f8bbd0;
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #d63384;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ad1457;
+}
+
+/* ANIMAÇÕES */
+@keyframes girar {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+...body.light
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    transition: 0.5s;
+}
+
+/* MODO CLARO */
+body.light {
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+}
+
+/* MODO ESCURO */
+body.dark {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* BOTÃO MODO */
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    background: white;
+}
+
+/* CARD */
+.profile-card {
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeIn 1s ease;
+}
+
+/* FOTO */
+.foto-box {
+    position: relative;
+    display: inline-block;
+}
+
+.foto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.foto:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* BRILHO */
+.glow {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff69b4, #ff1493, #ff69b4);
+    z-index: -1;
+    animation: girar 6s linear infinite;
+}
+
+/* TEXTO */
+.nome {
+    color: white;
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+.cargo {
+    color: white;
+    opacity: 0.9;
+}
+
+/* BOTÕES */
+.botoes {
+    margin-top: 20px;
+}
+
+.botoes a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    background: white;
+    color: #d63384;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.botoes a:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: #d63384;
+    color: white;
+}
+
+/* ANIMAÇÕES */
+@keyframes girar {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+...body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+/* FUNDO ANIMADO */
+.home {
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%;}
+    50% {background-position: 100%;}
+    100% {background-position: 0%;}
+}
+
+/* CENTRO */
+.center {
+    margin-top: 100px;
+}
+
+/* FOTO */
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+/* TEXTO */
+h1 {
+    color: white;
+}
+
+.subtitle {
+    color: white;
+    font-size: 18px;
+}
+
+/* RODAPÉ */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #d63384;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ANIMAÇÃO ENTRADA */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* RODAPÉ FIXO */
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #d63384;
+    color: white;
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* TEXTO EM MOVIMENTO */
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 100%;
+    animation: mover 12s linear infinite;
+    font-weight: bold;
+}
+
+/* ANIMAÇÃO */
+@keyframes mover {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* CARROSSEL */
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* SLIDES */
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 12s infinite;
+}
+
+/* IMAGENS */
+.slides img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* ANIMAÇÃO */
+@keyframes slide {
+    0% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: 0;}
+}
